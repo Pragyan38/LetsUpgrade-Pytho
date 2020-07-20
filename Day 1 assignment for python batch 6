@@ -1,0 +1,14 @@
+1) What is Python? What are the way to install python in your pc?
+  - It is a popular programming language which support functional and structured programming methods and provides very high-level dynamic data types. 
+    There are many open sources application such as Anaconda, PyCharm, Visual Studio Code etc to run the python code in your pc. 
+    For the Anaconda:
+     - Download the latest version of anaconda according to your respected os from the link (https://www.anaconda.com/products/individual) 
+     - Go to the folder where the file is downloaded and double click to install
+  
+2)  What are code enviroments? Types?
+    - Code enviroments is paltform were you can write, edit and run the code.
+      Its type:
+      - Text Editors eg: Atom, Visual Studio Code
+      - Full IDEs eg: Spyder, Pycharm
+      - Notebook Environments eg: Jupyter notebook
+  
