@@ -1,0 +1,173 @@
+1) Arithemetic operator
+	"**" : performs exponential(power) calculation on operators [dont use ^ use ** for power]
+	"*" : multiplication
+	"/" : division
+	"%" : modulus
+	"+" : addition
+	"-" : subtraction
+	"//" : floor division mean that after performing the division it returns the lower integer value as a result
+  eg=
+		10/3
+		3.3333333333333335
+		10//3 
+		3
+
+2) Comparison operator
+	"==" : performs exponential(power) calculation on operators [dont use ^ use ** for power]
+	"<" : multiplication
+	">" : division
+	"<=" : modulus
+	">=" : addition
+	"!=" : subtraction
+   eg=
+		    a=10
+		    b=20
+		    c=10
+        a==c
+        True
+        a==b
+        False
+        a<b
+        True
+        c>a
+        False
+        a<=b
+        True
+        c>=a
+        True
+        a>=b
+        False
+        a!=b
+        True
+        a!=c
+        False
+        c!=a
+        False
+        
+3) Assignment operator
+    "=" : a=b, b is assigned to a
+    "+=" : a+=b is equal to a=a+b
+    "-=" : a-=b is equal to a=a-b
+    "=" : a=b is equal to a=a*b
+    "/=" : a/=b is equal to a=a/b
+    "=" : a=b is equal to a=a**b
+    
+4) Bitwise operator : it work on bits
+    "|" : Bitwise OR operation
+
+        - 1 | 1 =1
+        - 1 | 0 =1
+        - 0 | 1 =1
+        - 0 | 0 =1
+    "&=" : Bitwise AND operation
+
+        - 1 & 1 =1
+        - 1 & 0 =0
+        - 0 & 1 =0
+        - 0 & 0 =0
+    "~" : Binary one's Complement
+
+    "^" : Bitwise XOR operation
+
+    "<<" : Binary left shift operator, the left-hand operand bit is shifted to the left by the number on the right
+
+    ">>" : Binary right shift operator, the right-hand operand bit is shifted to the right by the number on the right
+
+5) Logical operator
+    "And" : if both the sides, right and left are true, then the AND operator returns True
+        T and T = T
+        T and F = F
+        F and T = F
+        F and F = F
+    "or" : if any side is True, then the OR operator returns True
+        T or T = T
+        T or F = T
+        F or T = T
+        F or F = F
+        eg=
+            a=1
+            b=10
+            a>b or 10>9
+            True
+            a>b and 10>9
+            False
+            10>8>9 #that also mean 10>8 and 8>9
+            False
+            not 10 < 9 #it will invert the value
+            True
+            not True
+            False
+            
+6) Membership operator
+    "in" : if the specified operands is found in the sequences, then the "in" operators returns True , otherwise, it returns False
+    "not in" : if the specified operands is not found in the sequences, then the "not in" operators returns True , otherwise, it returns False
+    eg=
+        str1="pythonprograming"
+        "a" in str1
+        True
+        "x" in str1
+        False
+        "a" not in str1
+        False
+        "x" not in str1
+        True
+        
+7) Identity operator
+    "is" : if two variables refer to the same memory location, then the "is" operator returns True, otherwise it returns False
+    "is not" : if two variables refer to the same memory location, then the "is not" operator returns False, otherwise it returns True
+    eg=
+        e=10
+        r=10
+        e is r
+        True
+        id(e)
+        140720081904304
+        id(r) #both e and r id have a same memory location i.e 140720081904304 so, "e is r" is True
+        140720081904304
+        x=1.5
+        y=1.5
+        x is y
+        False
+        id(x)
+        2716865540464
+        id(y)
+        2716865541360
+        m=257 #Note: from -5 to 256 all the memory location are same after that it will give different memory location
+        n=257
+        m is n
+        False
+        id(m)
+        2716855434896
+        id(n)
+        2716855434512
+        po=11
+        op=21
+        po is op
+        False
+        id(po)
+        140720081904336
+        id(op)
+        140720081904656
+        
+8) Operator Precedence: from lowest precedence (least binding) to highest precedence (most binding)
+    :=                                              Assignment expression
+    lambda                                          Lambda expression
+    if-else                                         Conditional expression
+    or                                              Boolean OR
+    and                                             Boolean AND
+    not x                                           Boolean NOT
+    in, not, in, is, is not, <, <=, >, >=, !=, ==   Comparisons, including membership tests and identity test
+    |                                               Bitwise OR
+    ^                                               Bitwise XOR
+    &                                               Bitwise AND
+    <<, >>                                          Shift
+    +, -                                            Addition and subtraction
+    *, @, /, //, %                                  Multiplication, matrix multiplication, division, floor division, remainder
+    +x, -x, ~x                                      Positive, negative, bitwise NOT
+    **                                              Exponentiation
+    await x                                         Await expression
+    x[index]                                        Subscription 
+    x[index:index]                                  Slicing
+    f(args...)                                      Function call
+    ()                                              Parentheses
+    
