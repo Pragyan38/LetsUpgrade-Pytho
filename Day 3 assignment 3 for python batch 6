@@ -1,0 +1,25 @@
+#sum of n number using while loop
+num1 = 10
+sum2 = 0
+while (num1 >= 0):
+    sum2 = sum2 + num1
+    num1 -= 1
+    print("Sum of number: ", sum2)
+print ("sum using while loop ", sum2)
+
+
+#take a integer and find--prime or not
+num = int(input("Enter a number: "))
+if num > 1:
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           break
+   else:
+       print(num,"is a prime number")
+else:
+   print(num,"is not a prime number")
+
+
+
+
