@@ -1,0 +1,14 @@
+#Find all occurrence of substring in the given string
+  sentence = input("Enter a sentence: ")
+  word = input("Enter a word from the sentence: ")
+  words = sentence.split(' ')
+  positions = [ i+1 for i,w in enumerate(words) if w == word ]
+  print(positions)
+
+#islower() ----> with different kind of strigs
+  str1 = input("Enter the word or sentences: ")
+  print(str1.islower())
+  
+#isupper() ----> with different kind of strigs
+  str2 = input("Enter the word or sentences: ")
+  print(str2.isupper())
