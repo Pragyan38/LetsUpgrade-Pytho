@@ -1,0 +1,24 @@
+# [0,1,2,10,4,1,0,56,2,0,1,3,0,56,0,4] 
+  Short by increasing order but all zero should be at right side.
+
+numb=[0,1,2,10,4,1,0,56,2,0,1,3,0,56,0,4]
+numb.sort()
+numb.extend((0,0,0,0,0,))
+del numb[0:5]
+print(numb)
+
+
+
+
+# list1=[10,20,40,60,70,80] sorted list 
+  list2=[5,15,25,35,45,60] sorted list
+  Merge these two sorted to produce one sorted list, but use only loop either whjile or for one time
+
+list1=[10,20,40,60,70,80]
+list2=[5,15,25,35,45,60]
+list3=list1+list2
+for i in range(min(list3),max(list3)):
+    if i in list3:
+        print(i,end=' ')
+
+  
